@@ -4,9 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>cv</title>
 </head>
 <body>
-    <h1>hello</h1>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                  <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                  <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                  <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                  <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                  <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                  <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                  <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+                </ul>
+              </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container main-container">
+            <section class="section section-profile" id="profile">
+                <img class="img" src="./assets/img/pic.jpg" alt="avatar">
+                <div class="section-profile-title">
+                    <h1 class="section-title main-title">Anna Bytorina</h1>
+                    <p>Junior Front-end Developer</p>
+                </div>
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="section-title">Contacts</h2>
+                <ul>
+                    <li>Location: Minsk, Belarus</li>
+                    <li>E-mail: <a href="mailto:hannabutorina@gmail.com">hannabutorina@gmail.com</a></li>
+                    <li>Github: <a href="https://github.com/annabytorina">annabytorina</a></li>
+                    <li>Telegram: <a href="https://t.me/anechka_by">@anechka_by</a></li>
+                    <li>Discord: on1ka#8088</li>
+                </ul>
+            </section>
+            <section class="section" id="summary">
+                <h2 class="section-title">Summary</h2>
+                <p>Currently working in BNTU Science Library in informaton technologies department. I entered the RS school to increase my knowledge in Front-end Web development and gain experience in projects, which are close to real tasks.</p>
+            </section>
+            <section class="section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>JS</li>
+                    <li>MySQL</li>
+                    <li>Git, GitHub</li>
+                    <li>VScode, IntelliJ IDEA</li>
+                    <li>Figma</li>
+                </ul>
+            </section>
+            <section class="section" id="code">
+                <h2 class="section-title">Code</h2>
+                <pre class="pre">
+                    <code>function isPalindrome(line) {
+  
+                        var str = line.toString();
+                        var newLine = str.split('').reverse('').join('');
+                        if (newLine == str)
+                        return true
+                        else return false
+                      }
+                    </code>
+                </pre>
+            </section>
+            <section class="section" id="courses">
+                <h2 class="section-title">Courses</h2>
+                <ul>
+                    <li>HTML, CSS, JS and Figma completed courses in <a href="https://wayup.in/">WAYUP school</a></li>
+                </ul>
+            </section>
+            <section class="section" id="projects">
+                <h2 class="section-title">Projects</h2>
+                <ul>
+                    <li><a href="https://library.bntu.by/">Science Library of BNTU</a></li></li>
+                </ul>
+                <!--<div class="library-pic"></div>-->
+            </section> 
+            <section class="section" id="education">
+                <h2 class="section-title">Education</h2>
+                <ul><li>Belarusian State University of Informatics and Radioelectronics</li>
+                </ul>
+            </section> 
+            <section class="section" id="languages">
+                <h2 class="section-title">English</h2>
+                <ul>
+                    <li>B1 Pre-Intermediate</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div>
+                &copy; 2022
+                <a class="git-link" href="https://github.com/annabytorina"> annabytorina</a>
+            </div>
+
+                <a href="https://rs.school/js/"><img class="logo" src="./assets/img/rs_school_js.svg" alt="rs-school"></a>
+
+        </div>
+    </footer>
+    <script src="index.js"></script>
 </body>
 </html>
